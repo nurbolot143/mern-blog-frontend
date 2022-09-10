@@ -16,7 +16,7 @@ export const TagsBlock = ({ items, isLoading = true }) => {
     <SideBlock title="Тэги">
       <List>
         {(isLoading ? [...Array(5)] : items).map((name, i) => (
-          <Link
+          <a
             style={{ textDecoration: "none", color: "black" }}
             href={`/tags/${name}`}
           >
@@ -32,7 +32,7 @@ export const TagsBlock = ({ items, isLoading = true }) => {
                 )}
               </ListItemButton>
             </ListItem>
-          </Link>
+          </a>
         ))}
       </List>
     </SideBlock>
