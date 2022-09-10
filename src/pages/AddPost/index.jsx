@@ -11,9 +11,9 @@ export const AddPost = () => {
   const imageUrl = '';
   const [value, setValue] = React.useState('');
 
-  const handleChangeFile = () => {};
+  const handleChangeFile = () => { };
 
-  const onClickRemoveImage = () => {};
+  const onClickRemoveImage = () => { };
 
   const onChange = React.useCallback((value) => {
     setValue(value);
