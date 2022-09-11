@@ -20,7 +20,8 @@ export const Login = () => {
     defaultValues: {
       email: '',
       password: ''
-    }
+    },
+    mode: 'onChange'
   })
 
   const dispatch = useDispatch();
@@ -64,7 +65,12 @@ export const Login = () => {
           helperText={errors.password?.message}
           {...register('password', { required: 'Укажите пароль' })}
           fullWidth />
-        <Button type="submit" size="large" variant="contained" fullWidth>
+        <Button
+          disabled={!isValed}
+          type="submit"
+          size="large"
+          variant="contained"
+          fullWidth>
           Войти
         </Button>
       </form>
