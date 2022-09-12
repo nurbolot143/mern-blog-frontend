@@ -38,8 +38,7 @@ export const Home = () => {
                 title={item.title}
                 imageUrl={item.imageUrl}
                 user={{
-                  avatarUrl:
-                    item.user.avatarUrl,
+                  avatarUrl: item.user.avatarUrl,
                   fullName: item.user.fullName,
                 }}
                 createdAt={item.createdAt}
