@@ -36,6 +36,7 @@ export const Home = () => {
             isPostsLoading ? <Post key={idx} isLoading={true} /> : (
               <Post
                 id={item._id}
+                key={item._id}
                 title={item.title}
                 imageUrl={item.imageUrl ? `http://localhost:4444${item.imageUrl}` : ''}
                 user={{
